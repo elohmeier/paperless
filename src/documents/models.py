@@ -59,6 +59,7 @@ class MatchingModel(models.Model):
 
     class Meta:
         abstract = True
+        ordering = ("name", "slug")
 
     def __str__(self):
         return self.name
